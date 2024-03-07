@@ -1,0 +1,271 @@
+/* Main CSS Styles */
+
+body {
+    margin: 0px;
+ }
+ 
+ .menu {
+    gap: 5rem;
+    background-color: rgb(185, 119, 215);
+    padding: 10px;
+ }
+ 
+ .list-item {
+    padding: 3px 5px;
+    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 3px;
+    color: black;
+ }
+ 
+ /* Text Module */
+ #text {
+    background-color: rgb(143, 181, 200);
+ }
+ 
+ /* Table Module */
+ #table {
+    background-color: rgb(143, 181, 200);
+ }
+ 
+ /* Map Module */
+ #map {
+    background-color: rgb(143, 181, 200);
+ }
+ 
+ /* Forms Module */
+ #forms {
+    background-color: rgb(143, 181, 200);
+ }
+ 
+ form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .form-item {
+    margin: 20px 0px;
+    border: unset;
+    border-bottom: 2px solid #643131;
+    font-size: 1rem;
+ }
+ 
+ /* Table Styles */
+ table {
+    border-collapse: collapse;
+    width: 100%;
+ }
+ 
+ th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+ }
+ 
+ /* Photo Module */
+ #photo {
+    background-color: rgb(143, 181, 200);
+ }
+ 
+ .photo-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+ }
+ 
+ .photo {
+    height: 30vh;
+    object-fit: cover;
+ }
+ 
+ /* Video Module */
+ #video {
+    background-color: rgb(143, 181, 200);
+ }
+ 
+ .ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+ }
+ 
+ /* Main Section */
+ #main {
+    background-color: rgb(143, 181, 200);
+ }
+ 
+ .me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ /* Main Header */
+ .header {
+    background-color: rgb(185, 119, 215);
+ }
+ 
+ .btn {
+    padding: 11px 40px;
+    background: none;
+    border: none;
+    border: 1px solid black;
+    margin: 10px;
+    background: cadetblue;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 600;
+ }
+ 
+ .header-burger-btn {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    z-index: 1;
+    background: none;
+ }
+ 
+ .header-burger-btn span {
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #fff;
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+ }
+ 
+ .header-burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+ }
+ 
+ .header-burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+ }
+ 
+ .header.open .header-burger-btn span {
+    background-color: #fff;
+ }
+ 
+ .header.open .header-burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+ }
+ 
+ .header.open .header-burger-btn span:nth-child(2) {
+    opacity: 0;
+ }
+ 
+ .header.open .header-burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+ }
+ 
+ /* Media Queries */
+ @media (max-width: 1300px) {
+    .photo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+ }
+ 
+ @media (max-width: 992px) {
+    .header-burger-btn {
+        display: block;
+    }
+ 
+    .photo {
+        height: 30vh;
+        width: 40%;
+        object-fit: cover;
+    }
+ 
+    .header.open {
+        flex-direction: column;
+        display: block;
+        height: 55vh;
+    }
+ 
+    .header {
+        height: 5vh;
+    }
+ 
+    .ul {
+        display: none;
+        list-style-type: none;
+    }
+   
+ 
+    .header.open ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+ 
+ @media (max-width: 650px) {
+    .footer-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .video {
+        display: flex;
+    }
+ 
+    .photo {
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+    }
+ 
+    .main_foto {
+        width: 70%;
+    }
+ 
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        width: 60%;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+    }
+ 
+    .main_video {
+        width: 70%;
+    }
+ 
+    .foto {
+        width: 40%;
+    }
+ 
+    .box {
+        width: 70%;
+    }
+ 
+    .me_subtitle {
+        text-align: center;
+    }
+ }
+ /* End of Main CSS Styles */
